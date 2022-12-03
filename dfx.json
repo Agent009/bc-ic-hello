@@ -1,6 +1,10 @@
 {
-  "dfx": "0.10.1",
+  "dfx": "0.9.3",
   "canisters": {
+    "dbank": {
+      "main": "src/dbank/main.mo",
+      "type": "motoko"
+    },
     "hello_backend": {
       "main": "src/hello_backend/main.mo",
       "type": "motoko"
