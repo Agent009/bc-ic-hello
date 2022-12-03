@@ -6,13 +6,15 @@ import Debug "mo:base/Debug";
  */
 actor DBank {
   // Create value with initial value
-  var currentValue = 300;
+  // The stable keyword turns the variable into a persisted variable, which retains its value between deployments
+  stable var currentValue = 300;
   // Assign new value to the variable
-  currentValue := 100;
+  // currentValue := 100;
   // Assign a constant value that cannot be changed later on.
   let id = 232323232;
 
   Debug.print(debug_show(currentValue));
+  // Debug.print(debug_show(currentValue));
 
   // dfx canister call dbank topUp
   public func topUp(amount: Nat) {
