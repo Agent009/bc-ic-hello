@@ -1,5 +1,5 @@
 {
-  "dfx": "0.9.3",
+  "dfx": "0.12.1",
   "canisters": {
     "dbank_backend": {
       "main": "src/dbank_backend/main.mo",
