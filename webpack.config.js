@@ -37,7 +37,7 @@ function initCanisterEnv() {
 
 const canisterEnvVariables = initCanisterEnv();
 const isDevelopment = process.env.NODE_ENV !== "production";
-const frontendDirectory = "dbank_frontend";
+const frontendDirectory = "hello_frontend";
 const frontend_entry = path.join("src", frontendDirectory, "src", "index.html");
 
 module.exports = {

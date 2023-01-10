@@ -1,20 +1,20 @@
 {
   "dfx": "0.12.1",
   "canisters": {
-    "dbank_backend": {
-      "main": "src/dbank_backend/main.mo",
+    "hello_backend": {
+      "main": "src/hello_backend/main.mo",
       "type": "motoko"
     },
-    "dbank_frontend": {
+    "hello_frontend": {
       "dependencies": [
-        "dbank_backend"
+        "hello_backend"
       ],
       "frontend": {
-        "entrypoint": "src/dbank_frontend/src/index.html"
+        "entrypoint": "src/hello_frontend/src/index.html"
       },
       "source": [
-        "src/dbank_frontend/assets",
-        "dist/dbank_frontend/"
+        "src/hello_frontend/assets",
+        "dist/hello_frontend/"
       ],
       "type": "assets"
     }
