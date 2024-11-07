@@ -1,5 +1,4 @@
 {
-  "dfx": "0.12.1",
   "canisters": {
     "hello_backend": {
       "main": "src/hello_backend/main.mo",
@@ -9,14 +8,11 @@
       "dependencies": [
         "hello_backend"
       ],
-      "frontend": {
-        "entrypoint": "src/hello_frontend/src/index.html"
-      },
       "source": [
-        "src/hello_frontend/assets",
-        "dist/hello_frontend/"
+        "src/hello_frontend/dist"
       ],
-      "type": "assets"
+      "type": "assets",
+      "workspace": "hello_frontend"
     }
   },
   "defaults": {
@@ -25,5 +21,6 @@
       "packtool": ""
     }
   },
+  "output_env_file": ".env",
   "version": 1
 }
